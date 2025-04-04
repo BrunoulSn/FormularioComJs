@@ -1,0 +1,110 @@
+nav {
+    display: flex;
+    height: 200px;
+    background-color: rgb(161, 155, 155);
+    justify-content: center;
+    align-items: center;
+    border-style: ridge;
+    border-color: black;
+}
+
+nav div {
+    display: flex;
+    align-items: start;
+    width: 100%;
+}
+
+nav img {
+    width: 150px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.iconDiv {
+    width: fit-content;
+}
+
+.titleDiv {
+    margin-right: 500px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+body {
+    margin: 0;
+}
+
+.contentDiv {
+    display: flex;
+    align-items: center;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    border-style: double;
+    border-color: black;
+}
+
+main {
+    margin-top: 200px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 30px;
+}
+
+input {
+    height: 30px;
+    width: 450px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+.CadastrarBotao {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgb(0, 202, 0);
+    cursor: pointer;
+}
+.ConsultarCadastroBotao{
+    background-color:rgb(161, 155, 155);
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.CadastrarBotao:hover {
+    background-color: rgb(0, 255, 0);
+}
+
+.BotaoReferencia {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.lixoAberto
+{
+    width: 70px;
+    position: relative;
+}
+.imagem{
+    display: flex;
+    justify-content: flex-start;
+
+}
