@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Cadastro</title>
+    <link rel="stylesheet" href="indexStyle.css">
 </head>
 
 <body style="background-color: rgb(83, 83, 83);">
@@ -31,111 +32,22 @@
             </div>
             <div>
                 <p>Confirmar Senha</p>
-                <input type="password">
+                <input type="password" id="ConfirmarSenha">
             </div>
-            <div class="BotaoReferencia">
-                <a href="index.html"><img src="lixoAberto.png" alt="" class="lixoAberto"></a>
-                <button onclick="CadastroUsuario();">Cadastrar</button>
+            <div class="imagem">
+                <a href="index.html">
+                    <img src="lixoAberto.png" alt="Imagem 1" class="lixoAberto">
+
+                </a>
+            </div>
+            <div>
+                <button onclick="CadastroUsuario()" class="CadastrarBotao">Cadastrar</button>
+                <button onclick="ConsultarCadastro()" class="ConsultarCadastrBotao">Consultar Cadastros</button>
             </div>
         </main>
     </div>
     <script src="indexController.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 </body>
 
 </html>
-<style>
-    nav {
-        display: flex;
-        height: 200px;
-        background-color: rgb(161, 155, 155);
-        justify-content: center;
-        align-items: center;
-        border-style: ridge;
-        border-color: black;
-    }
-
-    nav div {
-        display: flex;
-        align-items: start;
-        width: 100%;
-    }
-
-    nav img {
-        width: 150px;
-        border-radius: 20px;
-        margin: 20px;
-    }
-
-    .iconDiv {
-        width: fit-content;
-    }
-
-    .titleDiv {
-        margin-right: 500px;
-    }
-
-    h1 {
-        font-size: 50px;
-    }
-
-    body {
-        margin: 0;
-    }
-
-    .contentDiv {
-        display: flex;
-        align-items: center;
-        
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        border-style: double;
-        border-color: black;
-    }
-
-    main {
-        margin-top: 200px;
-        width: 500px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 10px;
-    }
-
-    div {
-        display: flex;
-        flex-direction: column;
-    }
-
-    p {
-        font-size: 30px;
-    }
-
-    input {
-        height: 30px;
-        width: 450px;
-        margin-top: -30px;
-        margin-bottom: 10px;
-    }
-
-    button {
-        margin-top: 20px;
-        margin-bottom: 30px;
-        padding: 20px;
-        background-color: rgb(0, 202, 0);
-        cursor: pointer;
-    }
-    button:hover{
-        background-color: rgb(0, 255, 0);
-    }
-
-    .BotaoReferencia {
-        width: 100%;
-        display: flex;
-    }
-    .lixoAberto{
-        width: 70px;
-    }
-</style>
